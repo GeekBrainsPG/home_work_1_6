@@ -6,6 +6,8 @@ public class Cat extends Animal {
 
     public Cat(String name) {
         super(name);
+
+        AnimalSingleton.getInstance().incrementCatCounter();
     }
 
     @Override

@@ -19,7 +19,10 @@ public class ApplicationLauncher {
         dog1.swim(10);
         dog2.swim(20);
 
-        System.out.println(AnimalSingleton.getInstance().getAnimalCounter());
+        System.out.printf("Animal counter: %d, Cat counter %d, Dog counter %d",
+                AnimalSingleton.getInstance().getAnimalCounter(),
+                AnimalSingleton.getInstance().getCatCounter(),
+                AnimalSingleton.getInstance().getDogCounter());
     }
 
 }
